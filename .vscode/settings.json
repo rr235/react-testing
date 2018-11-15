@@ -1,8 +1,9 @@
 {
-    "editor.formatOnSave": true,
-    "prettier.eslintIntegration": true,
-    "files.associations": {
-      "**/src/components/**/*.js": "javascriptreact",
-      "**/src/index.js": "javascriptreact"
-    }
-  }
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "files.associations": {
+    "**/src/components/**/*.js": "javascriptreact",
+    "**/src/index.js": "javascriptreact"
+  },
+  "editor.tabSize": 2
+}
