@@ -1,6 +1,7 @@
 import React from "react";
 import { mount } from "enzyme";
 import CommentBox from "components/CommentBox";
+import { wrap } from "module";
 
 let wrapped;
 
@@ -22,4 +23,24 @@ it("can type text into text area", () => {
     target: { value: "new comment" }
   });
   wrapped.update();
+
+  expect(wrapped.find("textarea").prop("value")).toEqual("new comment");
+});
+
+it("clears the text area on submit", () => {
+  wrapped.find("textarea").simulate("change", {
+    target: {
+      value: "new comment"
+    }
+  });
+  wrapped.update();
+  /**
+   * commented code below is a good practice to do, to make sure text is updated.
+   * ignoring it, since there is a test above to check that.
+   */
+  // expect(wrapped.find("textarea").prop("value")).toEqual("new comment");
+
+  wrapped.find("form").simulate("submit");
+  wrapped.update();
+  expect(wrapped.find("textarea").prop("value")).toEqual("");
 });

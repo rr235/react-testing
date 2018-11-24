@@ -21,3 +21,4 @@
 - afterEach - jest
 - simulate
 - update
+- prop
