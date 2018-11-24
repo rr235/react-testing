@@ -1,8 +1,8 @@
 import React from "react";
 import { shallow } from "enzyme";
-import App from "../App";
-import CommentBox from "../commentBox";
-import CommentList from "../commentList";
+import App from "components/App";
+import CommentBox from "components/commentBox";
+import CommentList from "components/commentList";
 
 it("shows a comment box", () => {
   const wrapper = shallow(<App />);
