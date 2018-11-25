@@ -33,6 +33,7 @@
   - first arg for connect is mapStateToProps callback method (null is not needed)
   - actions
   - actions creator will be available as props
-  - use render() over text()
-  - render method returns a cheerioWrapper (Cheerio js is similar to jquery)
-  - use JSONPlaceholder for fake api data
+- use render() over text()
+- render method returns a cheerioWrapper (Cheerio js is similar to jquery)
+- use JSONPlaceholder for fake api data
+- applyMiddleware to apply middleware
