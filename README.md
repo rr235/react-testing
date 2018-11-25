@@ -52,3 +52,5 @@
 - quick routing
   - BrowserRoute (from 'react-router-dom')
   - Route -> path, component, exact
+- react route
+  - this.props.history.push
