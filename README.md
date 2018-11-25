@@ -23,3 +23,13 @@
 - update
 - prop
 - describe - jest
+- quick check for redux store
+  - App wrapped in Provider (from 'react-redux')
+  - set store prop of Provider using createStore
+  - createStore takes first arg as combined reducer and second arg is initial state
+  - add `window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()` if dev tools support is needed
+- quick check for using action creators
+  - replace component with `connect` (from 'react-redux')
+  - first arg for connect is mapStateToProps callback method (null is not needed)
+  - actions
+  - actions creator will be available as props
