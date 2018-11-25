@@ -1,6 +1,6 @@
-# react-testing
+# Advanced React
 
-## Notes / Refs
+## react-testing
 
 - it
 - ReactDOM.render
@@ -46,3 +46,9 @@
   - to make jest wait till the end content of set timeout is executed, use `done` callback.
 - done() - jest
 - Read more about integration testing
+
+## Higher Order Component
+
+- quick routing
+  - BrowserRoute (from 'react-router-dom')
+  - Route -> path, component, exact
