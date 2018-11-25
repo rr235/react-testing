@@ -37,3 +37,7 @@
 - render method returns a cheerioWrapper (Cheerio js is similar to jquery)
 - use JSONPlaceholder for fake api data
 - applyMiddleware to apply middleware
+- reduxPromise
+- moxios
+  - install()
+  - stubRequest()
