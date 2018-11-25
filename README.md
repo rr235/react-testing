@@ -41,6 +41,7 @@
 - moxios
   - install()
   - stubRequest()
-  - note: added a 100 to give enough time for moxios to send back the mocked response
+  - wait()
+  - note: added a 100 to give enough time for moxios to send back the mocked response (Don't do this. just use moxios wait)
   - to make jest wait till the end content of set timeout is executed, use `done` callback.
 - done() - jest
