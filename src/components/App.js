@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
 import { connect } from "react-redux";
-import CommentBox from "components/commentBox";
-import CommentList from "components/commentList";
+import CommentBox from "components/CommentBox";
+import CommentList from "components/CommentList";
 import * as actions from "actions";
 class App extends Component {
   renderButton() {

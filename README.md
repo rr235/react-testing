@@ -37,7 +37,7 @@
 - render method returns a cheerioWrapper (Cheerio js is similar to jquery)
 - use JSONPlaceholder for fake api data
 - applyMiddleware to apply middleware
-- reduxPromise
+- reduxPromise?
 - moxios
   - install()
   - stubRequest()
@@ -54,3 +54,19 @@
   - Route -> path, component, exact
 - react route
   - this.props.history.push
+
+```javascript
+import React, { Component } from "react";
+
+export default ChildComponent => {
+  class ComposedComponent extends Component {
+    render() {
+      return <ChildComponent {...this.props} />;
+    }
+  }
+
+  return ComposedComponent;
+};
+```
+
+- when a component is used with higher order component. required actions(when using redux) and history (in case of routes being used) needs to be passed as props. hence using "{...this.props}" in the return.
